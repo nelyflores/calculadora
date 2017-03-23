@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculadora</title>
+</head>
+<body>
+<h1 align="center">CALCULADORA BASICA<h1>
+<style type="text/css">
+input[type=button], input[type="text"]{
+	width: 100%;
+	height: 100%;
+	font-size:30 px; 
+}
+	table,form{
+		width: 500px;
+		height: 50px;
+		margin: 0 auto;
+	}
+
+
+
+
+</style>
+<script type="text/javascript" src="calculadora.js"></script>
+
+<form  name="calculadora" id="calculadora">
+<table>
+    <tr>
+	<td colspan="3"><input type="text" id="display" ></td>
+	</tr>
+	<tr>
+	<td><input type="button" id="uno" value="1" onclick="numero(1)"></td>
+	<td><input type="button" id="dos" value="2" onclick="numero(2)"></td>
+	<td><input type="button" id="tres" value="3" onclick="numero(3)"></td>
+	</tr>
+	<tr>
+	
+	<td><input type="button" id="cuatro" value="4" onclick="numero(4)"></td>
+	<td><input type="button" id="cinco" value="5" onclick="numero(5)"></td>
+	<td><input type="button" id="seis" value="6" onclick="numero(6)"></td>
+	</tr>
+	<tr>
+	
+	<td><input type="button" id="siete" value="7" onclick="numero(7)"></td>
+	<td><input type="button" id="ocho" value="8" onclick="numero(8)"></td>
+	<td><input type="button" id="nueve" value="9" onclick="numero(9)"></td>
+	</tr>
+	<tr>
+	
+	<td><input type="button" id="cero" value="0" onclick="numero(0)"></td>
+    <td><input type="button" id="suma" value="+" onclick="sumar()"></td>
+	<td><input type="button" id="resta" value="-" onclick="restar()"></td>
+	</tr>
+	<tr>
+	<td><input type="button" id="multiplicacion" value="*" onclick="multiplicar()"></td>
+	<td><input type="button" id="division" value="/" onclick="dividir(value)"></td<<input>
+	<td><input type="button" id="igual" value="=" onclick="resultado()" ></td>
+	</tr>
+</form>
+</table>
+</body>
+</html>
